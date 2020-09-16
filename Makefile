@@ -8,6 +8,6 @@ image:
 	docker build --no-cache -t "$(IMG):$(VERSION)" .
 
 push: image
-	docker push "ytra/$(IMG):$(VERSION)"
+	docker push "$(IMG):$(VERSION)"
 
 .PHONY: all image push
