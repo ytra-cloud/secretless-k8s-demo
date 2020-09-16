@@ -1,6 +1,6 @@
 VERSION = $(shell date +v%Y%m%d)-$(shell git describe --tags --always --dirty)
 
-IMG = "diverdane/secretless-k8s-demo"
+IMG = "ytra/secretless-k8s-demo"
 
 all: image
 
