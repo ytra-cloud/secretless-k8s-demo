@@ -8,6 +8,6 @@ image:
 	docker build --no-cache -t "$(IMG):$(VERSION)" .
 
 push: image
-	gcloud docker -- push "$(IMG):$(VERSION)"
+	docker push "ytra/$(IMG):$(VERSION)"
 
 .PHONY: all image push
